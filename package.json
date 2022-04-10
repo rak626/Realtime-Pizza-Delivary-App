@@ -1,0 +1,37 @@
+{
+  "name": "realtime-pizza",
+  "version": "1.0.0",
+  "description": "This is our realtime Pizza app",
+  "main": "index.js",
+  "author": "Rakesh Ghosh",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "watch": "npx mix watch"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.2",
+    "mongoose": "^6.2.9",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "nodemon": "^2.0.15",
+    "resolve-url-loader": "5.0.0",
+    "sass": "^1.49.11",
+    "sass-loader": "12.1.0"
+  }
+}
