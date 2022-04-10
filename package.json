@@ -6,10 +6,10 @@
   "author": "Rakesh Ghosh",
   "license": "MIT",
   "scripts": {
+    "start": "node server.js start",
     "serve": "node server.js",
     "dev": "nodemon server.js",
-    "watch": "npx mix watch",
-    "build": "npm i npm serve"
+    "watch": "npx mix watch"
   },
   "dependencies": {
     "axios": "^0.26.1",

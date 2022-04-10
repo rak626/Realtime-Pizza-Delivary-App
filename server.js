@@ -17,7 +17,7 @@ const Emitter = require('events');
 
 //DB connection
 
-const url = process.env.MONGO_CONNECTION_URL;
+const url = process.env.MONGO_CONNECTION_URL
 mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
