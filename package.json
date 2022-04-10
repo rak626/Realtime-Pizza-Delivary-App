@@ -6,7 +6,7 @@
   "author": "Rakesh Ghosh",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js start",
+    "start": "npm run serve",
     "serve": "node server.js",
     "dev": "nodemon server.js",
     "watch": "npx mix watch"
