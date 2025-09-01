@@ -1,4 +1,7 @@
-require('dotenv').config();
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 
 const express = require('express');
 const app = express();
@@ -60,7 +63,7 @@ app.use(
             mongoUrl: process.env.MONGO_CONNECTION_URL,
             autoRemove: 'native',
         }),
-        cookie: { maxAge: 1000 * 60 * 24 * 60 },
+        cookie: {maxAge: 1000 * 60 * 24 * 60},
     })
 );
 
@@ -85,7 +88,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 //different data for express
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({extended: false}));
 
 //set Template engine
 
